@@ -7,7 +7,8 @@ int main(void)
   printf("Enter grade: ");
   scanf("%d", &grade);
 
-  if (grade >= 90)
+  if (grade == 100) printf("S\n");
+  else if (grade >= 90)
   {
     printf("A\n");
   }
