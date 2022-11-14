@@ -12,6 +12,7 @@ int main(void){
   }
   else{
     printf("Fail\n");
+    printf("Good luck next time!\n");
   }
   
   return 0;
