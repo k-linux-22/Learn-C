@@ -12,6 +12,7 @@ int main(void)
     {
       max = num;
     }
+    printf("Current max: %d\n", max);
   }
   printf("Max: %d\n", max);
 
