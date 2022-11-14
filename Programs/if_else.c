@@ -7,16 +7,17 @@ int main(void)
   printf("Enter grade: ");
   scanf("%d", &grade);
 
-  if (grade >= 50)
+  if (grade >= 90)
   {
-    printf("Pass\n");
-    printf("Congrats!\n");
+    printf("A\n");
   }
-  else
+  else if (grade >= 75) printf("B\n");
+  else if (grade >= 60) printf("C\n");
+  else if (grade >= 45)
   {
-    printf("Fail\n");
-    printf("Good luck next time!\n");
+    printf("D\n");
   }
+  else printf("Other\n");
   
   return 0;
 }
