@@ -9,7 +9,7 @@ int main()
   printf("Enter a plural noun: ");
   scanf("%s", pluralNoun);
   printf("Enter a celebrity: ");
-  scanf("%s", celebrity);
+  scanf("\n %[^\n]%*c", celebrity);
 
   printf("\n");
   printf("Roses are %s \n", colour);
