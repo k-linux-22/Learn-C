@@ -1,35 +1,35 @@
 #include<stdio.h>
 
 int main() {
-    int x=10;
+    int x = 10;
     int* a = &x;
     int** b = &a;
     int*** c = &b;
     int**** d = &c;
 
-    printf("&x = Address of x: \t %d \n", &x);
+    printf("&x = Address of x: \t %p \n", &x); // %p gives an address (or pointer)
     printf("x = Data in x: \t %d \n\n", x);
     
-    printf("&a = Address of a: \t %d \n", &a);
-    printf("a = Address &x -> Data in a: \t %d \n", a);
+    printf("&a = Address of a: \t %p \n", &a);
+    printf("a = Address &x -> Data in a: \t %p \n", a);
     printf("*a = Data in x -> Address &x -> Data in a: \t %d \n\n", *a);
     
-    printf("&b = Address of b: \t %d \n", &b);
-    printf("b = Address &a -> Data in b: \t %d \n", b);
-    printf("*b = Address &x -> Data in a -> Address &a -> Data in b: \t %d \n", *b);
+    printf("&b = Address of b: \t %p \n", &b);
+    printf("b = Address &a -> Data in b: \t %p \n", b);
+    printf("*b = Address &x -> Data in a -> Address &a -> Data in b: \t %p \n", *b);
     printf("**b = Data in x -> Address &x -> Data in a -> Address &a -> Data in b: \t %d \n\n", *(*b));
     
-    printf("&c = Address of c: \t %d \n", &c);
-    printf("c = Address &b -> Data in c: \t %d \n", c);
-    printf("*c = Address &a -> Data in b -> Address &b -> Data in c: \t %d \n", *c);
-    printf("**c = Address &x -> Data in a -> Address &a -> Data in b -> Address &b -> Data in c: \t %d \n", *(*c));
+    printf("&c = Address of c: \t %p \n", &c);
+    printf("c = Address &b -> Data in c: \t %p \n", c);
+    printf("*c = Address &a -> Data in b -> Address &b -> Data in c: \t %p \n", *c);
+    printf("**c = Address &x -> Data in a -> Address &a -> Data in b -> Address &b -> Data in c: \t %p \n", *(*c));
     printf("***c = Data in x -> Address &x -> Data in a -> Address &a -> Data in b -> Address &b -> Data in c: \t %d \n\n", *(*(*c)));
     
-    printf("&d = Address of d:\t  %d \n", &d);
-    printf("d = Address &c -> Data in d: \t %d \n", d);
-    printf("*d = Address &b -> Data in c -> Address &c -> Data in d: \t %d \n", *d);
-    printf("**d = Address &a -> Data in b -> Address &b -> Data in c -> Address &c -> Data in d: \t %d \n", *(*d));
-    printf("***d = Address &x -> Data in a -> Address &a -> Data in b -> Address &b -> Data in c -> Address &c -> Data in d: \t %d \n", *(*(*d)));
+    printf("&d = Address of d:\t  %p \n", &d);
+    printf("d = Address &c -> Data in d: \t %p \n", d);
+    printf("*d = Address &b -> Data in c -> Address &c -> Data in d: \t %p \n", *d);
+    printf("**d = Address &a -> Data in b -> Address &b -> Data in c -> Address &c -> Data in d: \t %p \n", *(*d));
+    printf("***d = Address &x -> Data in a -> Address &a -> Data in b -> Address &b -> Data in c -> Address &c -> Data in d: \t %p \n", *(*(*d)));
     printf("****d = Data in x -> Address &x -> Data in a -> Address &a -> Data in b -> Address &b -> Data in c -> Address &c -> Data in d: \t %d \n\n", *(*(*(*d))));
         
 }
