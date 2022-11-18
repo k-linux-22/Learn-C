@@ -18,7 +18,8 @@ int main()
   strcpy(student1.name, "John");
   strcpy(student1.major, "Business");
 
-  printf("%s of age %d is a major in %s and has a GPA of %0.2f \n", student1.name, student1.age, student1.major, student1.gpa);
+  printf("%s of age %d is a major in %s and has a GPA of %0.2f \n",
+    student1.name, student1.age, student1.major, student1.gpa);
 
   struct Student student2;
   student2.age = 23;
@@ -26,7 +27,8 @@ int main()
   strcpy(student2.name, "Mike");
   strcpy(student2.major, "Engineering");
 
-  printf("%s of age %d is a major in %s and has a GPA of %0.2f \n", student2.name, student2.age, student2.major, student2.gpa);
+  printf("%s of age %d is a major in %s and has a GPA of %0.2f \n",
+    student2.name, student2.age, student2.major, student2.gpa);
 
   return 0;
 }
