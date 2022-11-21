@@ -2,7 +2,7 @@
 
 int main()
 {
-  FILE * fpointer = fopen("Learn-C/people.txt", "w"); // w = write a file
+  FILE * fpointer = fopen("people.txt", "w"); // w = write a file
 
   fprintf(fpointer, "Jim, Salesman\nPam, Receptionist\nOscar, Accounting");
 
